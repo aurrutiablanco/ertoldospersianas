@@ -1125,13 +1125,19 @@ section {
     }
 
     /* Ajustes para pantallas de teléfonos (móviles) */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .hero-section {
         justify-content: center; /* Agrupa el texto y el botón en el centro */
         gap: 35px;               /* Controla la distancia exacta entre el texto y el botón */
         padding-top: 100px;      /* Reduce la distancia desde el navbar */
         padding-bottom: 40px;
     }
+
+    /* Cancela cualquier margen superior automático en los elementos internos */
+    .hero-section * {
+        margin-top: 0 !important;
+    }
+
 }
 
 }
