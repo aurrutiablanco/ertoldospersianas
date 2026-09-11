@@ -1124,9 +1124,16 @@ section {
         grid-template-columns: 1.5fr 1fr 1fr 1fr;
     }
 
-/* Corrección de espacio en el Hero para móviles */
+/* 2. SOBRESCRIBES ÚNICAMENTE PARA MÓVILES AL FINAL DEL CSS */
 @media (max-width: 768px) {
-    /* 1. Saca el overlay del flujo flex para que no ocupe espacio */
+    .hero-section {
+        justify-content: center !important; /* Agrupa texto y botón al centro */
+        gap: 20px !important;               /* Controla la distancia exacta entre ellos */
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+    }
+
+    /* Evita que el overlay ocupe espacio Flexbox */
     .hero-overlay {
         position: absolute;
         top: 0;
@@ -1136,20 +1143,11 @@ section {
         z-index: 1;
     }
 
-    /* 2. Eleva el contenido sobre el overlay */
-    .hero-content,
+    .hero-content, 
     .hero-cta {
         position: relative;
         z-index: 2;
-        margin-top: 0 !important;
-    }
-
-    /* 3. Agrupa texto y botón con la distancia exacta */
-    .hero-section {
-        justify-content: center !important;
-        gap: 25px !important; /* Ajusta este valor si quieres más o menos separación */
-        padding-top: 100px !important;
-        padding-bottom: 40px !important;
+        margin: 0 !important; /* Anula márgenes que empujen elementos */
     }
 }
 
