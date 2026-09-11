@@ -324,7 +324,7 @@ section {
 }
 
 .hero-title {
-    font-size: 2.2rem;              /* Letra más grande para el Hero */
+    font-size: 3rem;              /* Letra más grande para el Hero */
     line-height: 1.2;
     margin-bottom: 20px;
     font-family: var(--font-hero-title); /* Aplica Jura únicamente al título */
