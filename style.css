@@ -1124,20 +1124,33 @@ section {
         grid-template-columns: 1.5fr 1fr 1fr 1fr;
     }
 
-    /* Ajustes para pantallas de teléfonos (móviles) */
-@media (max-width: 500px) {
-    .hero-section {
-        justify-content: center; /* Agrupa el texto y el botón en el centro */
-        gap: 35px;               /* Controla la distancia exacta entre el texto y el botón */
-        padding-top: 100px;      /* Reduce la distancia desde el navbar */
-        padding-bottom: 40px;
+/* Corrección de espacio en el Hero para móviles */
+@media (max-width: 768px) {
+    /* 1. Saca el overlay del flujo flex para que no ocupe espacio */
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 
-    /* Cancela cualquier margen superior automático en los elementos internos */
-    .hero-section * {
+    /* 2. Eleva el contenido sobre el overlay */
+    .hero-content,
+    .hero-cta {
+        position: relative;
+        z-index: 2;
         margin-top: 0 !important;
     }
 
+    /* 3. Agrupa texto y botón con la distancia exacta */
+    .hero-section {
+        justify-content: center !important;
+        gap: 25px !important; /* Ajusta este valor si quieres más o menos separación */
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+    }
 }
 
 }
