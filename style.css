@@ -1128,7 +1128,7 @@ section {
 @media (max-width: 768px) {
     .hero-section {
         justify-content: center !important; /* Agrupa texto y botón al centro */
-        gap: 20px !important;               /* Controla la distancia exacta entre ellos */
+        gap: 5px !important;               /* Controla la distancia exacta entre ellos */
         padding-top: 100px !important;
         padding-bottom: 40px !important;
     }
