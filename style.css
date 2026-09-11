@@ -298,7 +298,7 @@ section {
     background: url('assets/hero4.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 130px 25px 50px 25px;
     color: var(--text-white);
     font-family: var(--font-hero); /* Aplica fuente de sistema al resto del hero */
