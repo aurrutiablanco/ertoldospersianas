@@ -293,8 +293,8 @@ section {
    ========================================================================== */
 .hero-section {
     position: relative;
-    height: 80vh;
-    min-height: 80vh;
+    height: 100vh;
+    min-height: 100vh;
     background: url('assets/hero4.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
