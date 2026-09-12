@@ -495,7 +495,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .toldo-display-container.switching {
