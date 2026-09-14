@@ -1153,3 +1153,65 @@ section {
 }
 
 }
+
+
+
+.nueva-seccion {
+  background-color: #f4f1ea;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 1s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card.card-animada-scroll {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.feature-card.card-animada-scroll.en-vista {
+  animation: subirTexto 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.feature-icon {
+  color: #e63946;
+  margin-bottom: 15px;
+  display: inline-flex;
+  padding: 12px;
+  background-color: rgba(230, 57, 70, 0.08);
+  border-radius: 12px;
+}
+
+.feature-card .feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.feature-card .feature-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  color: #555555;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
