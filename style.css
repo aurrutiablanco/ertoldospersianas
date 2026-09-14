@@ -1176,7 +1176,8 @@ section {
   padding: 30px 20px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 1s ease;
+  /* Transición suave para la entrada en pantalla y para el efecto hover */
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .feature-card:hover {
@@ -1188,8 +1189,10 @@ section {
   transform: translateY(60px);
 }
 
+/* Estado al entrar en vista: totalmente visible y en posición original */
 .feature-card.card-animada-scroll.en-vista {
-  animation: subirTexto 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .feature-icon {
