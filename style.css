@@ -1156,65 +1156,94 @@ section {
 
 
 
+
+
+
+
+
+/* ESTILOS DE LA SECCIÓN DE CARACTERÍSTICAS (ESCRITORIO + MÓVIL) */
+
 .nueva-seccion {
-  background-color: #f4f1ea;
-  padding: 60px 20px;
+  background-color: #f5f2eb; /* Fondo crema idéntico al de las imágenes */
+  padding: 80px 20px;
   width: 100%;
 }
 
+/* 1. Vista de Escritorio (3 columnas en fila) */
 .features-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 400px;
+  flex-direction: row;        /* Organiza las tarjetas horizontalmente */
+  justify-content: center;
+  gap: 25px;                  /* Espacio entre tarjetas */
+  max-width: 1150px;         /* Ancho amplio para computadora */
   margin: 0 auto;
 }
 
 .feature-card {
+  flex: 1;                    /* Fuerza a las 3 tarjetas a medir exactamente lo mismo */
   background: #ffffff;
-  border-radius: 16px;
-  padding: 30px 20px;
+  border-radius: 20px;
+  padding: 40px 25px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  /* Transición suave para la entrada en pantalla y para el efecto hover */
-  transition: transform 1.7s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
 }
 
+/* 2. Cuadro de Icono (Rosa pastel redondeado como la imagen) */
+.feature-icon {
+  color: #e63946;
+  background-color: #fde8e8;  /* Tono rosa claro exacto */
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feature-card .feature-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.feature-card .feature-text {
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 3. Animaciones al hacer scroll */
 .feature-card.card-animada-scroll {
   opacity: 0;
   transform: translateY(60px);
 }
 
-/* Estado al entrar en vista: totalmente visible y en posición original */
 .feature-card.card-animada-scroll.en-vista {
   opacity: 1;
   transform: translateY(0);
 }
 
-.feature-icon {
-  color: #e63946;
-  margin-bottom: 15px;
-  display: inline-flex;
-  padding: 12px;
-  background-color: rgba(230, 57, 70, 0.08);
-  border-radius: 12px;
-}
+/* Retrasos en cascada */
+.feature-card:nth-child(2) { transition-delay: 0.15s; }
+.feature-card:nth-child(3) { transition-delay: 0.30s; }
 
-.feature-card .feature-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #111111;
-  margin-bottom: 10px;
-}
+/* 4. Vista para Teléfonos (Se apilan en 1 columna) */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;  /* Cambia a vertical en pantallas pequeñas */
+    max-width: 400px;        /* Restringe el ancho centrado en celular */
+    gap: 20px;
+  }
 
-.feature-card .feature-text {
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 0.95rem;
-  color: #555555;
-  margin-bottom: 0;
-  line-height: 1.4;
+  .feature-card {
+    padding: 30px 20px;
+  }
 }
