@@ -1,471 +1,364 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/jpeg" href="assets/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E.R Toldos & Persianas</title>
-    <!-- FontAwesome para Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Public Sans y Jura -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Estilos CSS -->
+    <title>Persianas El Ávila | Protección Solar y Decoración</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href="assets/favicon.png">
 </head>
 <body>
 
-    <!-- NAVBAR NAVEGACIÓN -->
-    <header class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo-group">
-                <div class="logo-circle">
-                    <img src="assets/logo.jpg" alt="Logo E.R Toldos & Persianas" class="logo-img">
-                </div>
-                <span class="brand-title">E.R Toldos & Persianas</span>
-            </div>
-            <button class="mobile-menu-btn" id="menuToggle" aria-label="Abrir Menú">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <nav class="nav-links" id="navLinks">
-                <a href="#hero">Inicio</a>
-                <a href="#quienes-somos">Nosotros</a>
-                <a href="#toldos">Toldos</a>
-                <a href="#beneficios">Beneficios</a>
-                <a href="#clientes">Clientes</a>
-                <a href="#contactanos">Contacto</a>
-                <a href="#faq">Preguntas</a>
-            </nav>
-        </div>
-    </header>
+   <!-- Header / Navbar Glassmorphism -->
 
-    <!-- HERO SECTION (OCUPA 100vh) -->
-    <section id="hero" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content hero-animate">
-            <h1 class="hero-title">Expertos en transformar <br><span class="highlight-red">tus espacios</span></h1>
-            <p class="hero-subtitle">Contactanos y recibe tu asesoria completamente gratis</p>
-        </div>
-        <div class="hero-cta">
-            <button class="btn-custom open-modal-btn">
-                <span>SOLICITAR ASESORÍA</span>
-            </button>
-        </div>
-    </section>
+
+
+
+   <!-- Header / Navbar Glassmorphism -->
+<!-- HEADER & NAVBAR GLOBAL -->
+<header class="header revealed">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.jpg" alt="E.R Toldos & Persianas" class="logo-img">
+            <span class="logo-text">E.R TOLDOS & PERSIANAS</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="quienes_somos.html" class="nav-link">
+                        QUIÉNES SOMOS <span class="arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quienes_somos.html#empresa">Nuestra Empresa</a></li>
+                        <li><a href="quienes_somos.html#mision-vision">Misión y Visión</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="persianas.html" class="nav-link">
+                        PERSIANAS <span class="arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="persianas.html#inicio">Hero Persianas</a></li>
+                        <li><a href="persianas.html#enrollables">Enrollables</a></li>
+                        <li><a href="persianas.html#sheer-elegance">Sheer Elegance</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="toldos.html" class="nav-link">
+                        TOLDOS <span class="arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="toldos.html#inicio">Hero Toldos</a></li>
+                        <li><a href="toldos.html#retractiles">Retráctiles</a></li>
+                        <li><a href="toldos.html#fijos">Fijos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="servicios.html" class="nav-link">
+                        SERVICIOS <span class="arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="servicios.html#inicio">Todos los Servicios</a></li>
+                        <li><a href="servicios.html#instalacion">Instalación</a></li>
+                        <li><a href="servicios.html#mantenimiento">Mantenimiento</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="inicio" class="hero">
+            <img src="assets/hero4.jpg" alt="Fondo Hero" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content reveal-top">
+                <span class="badge">CALIDAD & ELEGANCIA</span>
+                <h1 class="hero-title title-line">Protección Solar y Decoración para tus Espacios</h1>
+                <p class="hero-description">
+                    Fabricación, venta e instalación de persianas, toldos y sombrillas a la medida con más de 47 años en el mercado.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-cut">SOLICITAR PRESUPUESTO</a>
+                    <a href="#nosotros" class="btn btn-cut">CONÓCENOS</a>
+                </div>
+            </div>
+        </section>
 
     
 
-    <section class="nueva-seccion">
-    <div class="features-container">
-        <div class="feature-card card-animada-scroll">
-            <div class="feature-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+<!-- SEPARADOR INVISIBLE PARA SCROLL -->
+         <div class="spacer spacer-md"></div> 
+
+
+        <!-- SECTION TOLDOS Y SOMBRILLAS -->
+<section id="toldos" class="section-toldos-full">
+    
+   
+
+        <!-- Carrusel Doble a Pantalla Completa (2 Imágenes Frente a Frente) -->
+    <div class="dual-carousel-wrapper reveal-bottom">
+        
+
+
+        <!-- Columna Izquierda (Sube de abajo hacia arriba) -->
+        <div class="dual-carousel-col" id="dualColLeft">
+            <div class="dual-slide active">
+                <a href="toldos.html">
+                    <img src="assets/img1.jpeg" alt="Toldos Extensibles">
+                    <div class="card-caption"></div>
+                </a>
             </div>
-            <h3 class="feature-title">Garantía Máxima</h3>
-            <p class="feature-text">Protección UV garantizada contra la intemperie.</p>
+            <div class="dual-slide">
+                <a href="toldos.html">
+                    <img src="assets/img2.jpeg" alt="Sombrillas Exterior">
+                    <div class="card-caption"></div>
+                </a>
+            </div>
+            <div class="dual-slide">
+                <a href="toldos.html">
+                    <img src="assets/img3.jpeg" alt="Toldos para Terraza">
+                    <div class="card-caption"></div>
+                </a>
+            </div>
         </div>
 
-        <div class="feature-card card-animada-scroll">
-            <div class="feature-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <!-- Columna Derecha (Baja de arriba hacia abajo) -->
+        <div class="dual-carousel-col" id="dualColRight">
+            <div class="dual-slide active">
+                <a href="toldos.html">
+                    <img src="assets/img4.jpeg" alt="Toldos Retráctiles">
+                    <div class="card-caption"></div>
+                </a>
             </div>
-            <h3 class="feature-title">Diseño a Medida</h3>
-            <p class="feature-text">Fabricación según las dimensiones de tu espacio.</p>
+            <div class="dual-slide">
+                <a href="toldos.html">
+                    <img src="assets/img5.jpeg" alt="Toldos Fijos">
+                    <div class="card-caption"></div>
+                </a>
+            </div>
+            <div class="dual-slide">
+                <a href="toldos.html">
+                    <img src="assets/img6.jpeg" alt="Sombrillas Premium">
+                    <div class="card-caption"></div>
+                </a>
+            </div>
         </div>
 
-        <div class="feature-card card-animada-scroll">
-            <div class="feature-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </div>
-            <h3 class="feature-title">Instalación Pro</h3>
-            <p class="feature-text">Técnicos certificados con atención inmediata.</p>
-            </div>
-        </div>
-    </section>
+        <!-- Botón Flotante Semi-transparente sobre la parte inferior -->
+        <a href="persianas.html" class="btn-floating-cta">VER CATÁLOGO</a>
 
-
-
-
-
-
-
-
-
-
-
-    <!-- SEPARADOR DE SECCIÓN -->
-    <div class="section-separator">
-        <div class="separator-line"></div>
     </div>
 
-    <!-- QUIÉNES SOMOS -->
-    <section id="quienes-somos" class="about-section reveal">
-        <div class="container">
-            <div class="section-title-container">
-                <h2 class="section-title">¿Quiénes <span class="highlight-red">Somos?</span></h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-image-wrapper">
-                    <img src="assets/seccion3.jpeg">
-                </div>
-                <div class="about-card">
-                    <p class="about-text-readable">
-                        Empresa venezolana líder en fabricación e instalación de toldos de lona, estructuras tensionadas y persianas de exterior. Transformamos tus espacios en áreas confortables, elegantes y protegidas del sol y la lluvia con acabados de primera clase.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+</section>
 
-    <!-- SEPARADOR DE SECCIÓN -->
-    <div class="section-separator">
-        <div class="separator-line"></div>
-    </div>
 
-    <!-- TOLDOS -->
-    <section id="toldos" class="toldos-section reveal">
-        <div class="container">
-            <div class="section-title-container">
-                <h2 class="section-title">Tipos de <span class="highlight-red">Toldos</span></h2>
-            </div>
+
+
+        
+
+       <!-- Sección de Tarjetas en Zigzag (Sin Carrusel) -->
+<div class="cards-zigzag-container reveal-bottom" id="seccionPersianasCards">
+    
+
+
+
+
+
+
+
+     <div class="logos-carousel-wrapper reveal-bottom bg-hueso">
             
-            <!-- Botones Superiores -->
-            <div class="toldos-tabs-nav">
-                <button class="toldo-tab-btn active" data-index="0">Toldo Retráctil</button>
-                <button class="toldo-tab-btn" data-index="1">Toldo Vertical</button>
-                <button class="toldo-tab-btn" data-index="2">Persiana Exterior</button>
-            </div>
 
-            <!-- Contenido con Transición -->
-            <div class="toldo-display-container" id="toldoDisplay">
-                <div class="toldo-mini-card">
-                    <h3 id="toldoTitle">Toldo Retráctil</h3>
-                    <p id="toldoDesc">Sistema extensible sin columnas fijas para mantener la vista libre.</p>
-                </div>
+        <h1 class="services-header-centered">Persianas</h1>
 
-                <div class="toldo-image-box">
-                    <img id="toldoImg" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Toldo Retráctil">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEPARADOR DE SECCIÓN -->
-    <div class="section-separator">
-        <div class="separator-line"></div>
-    </div>
-
-    <!-- BENEFICIOS -->
-    <section id="beneficios" class="benefits-section">
-        <div class="benefits-bg-overlay"></div>
-        <div class="container relative-z">
-            <div class="section-title-container">
-                <h2 class="section-title">¿Por Qué <span class="highlight-red">Elegirnos?</span></h2>
-            </div>
-            <div class="zigzag-grid">
-                
-                <div class="benefit-card benefit-left reveal">
-                    <div class="benefit-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
-                    <div class="benefit-info">
-                        <h3>Ahorro Térmico</h3>
-                        <p>Disminuye hasta un 80% el calor solar interno de tus ambientes.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-card benefit-right reveal">
-                    <div class="benefit-icon"><i class="fa-solid fa-shield-heart"></i></div>
-                    <div class="benefit-info">
-                        <h3>Protección Total</h3>
-                        <p>Evita el desgaste y decoloración solar de muebles y pisos.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-card benefit-left reveal">
-                    <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <div class="benefit-info">
-                        <h3>Valor Estético</h3>
-                        <p>Aporta elegancia arquitectónica y revaloriza tu propiedad.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SEPARADOR DE SECCIÓN -->
-    <div class="section-separator">
-        <div class="separator-line"></div>
-    </div>
-
-    <!-- CLIENTES -->
-    <section id="clientes" class="clients-section reveal">
-        <div class="container">
-            <div class="section-title-container">
-                <h2 class="section-title">Confían en <span class="highlight-red">Nosotros</span></h2>
-            </div>
-            <p class="section-subtitle text-center">Empresas e instituciones que respaldan la calidad de nuestras instalaciones.</p>
         </div>
 
-        <div class="marquee-wrapper">
-            <div class="marquee-content">
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-store"></i> Central Madeirense</div>
-                    <span class="client-hover-name">Central Madeirense</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-building"></i> SAMBIL</div>
-                    <span class="client-hover-name">Sambil</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-tree"></i> BARUTA</div>
-                    <span class="client-hover-name">Baruta Avanza Contigo</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-mobile-screen"></i> SAMSUNG</div>
-                    <span class="client-hover-name">Samsung</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-industry"></i> ROSNEFT</div>
-                    <span class="client-hover-name">Rosneft</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-cart-shopping"></i> LÍDER</div>
-                    <span class="client-hover-name">Líder</span>
-                </div>
 
-                <!-- Duplicado loop -->
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-store"></i> Central Madeirense</div>
-                    <span class="client-hover-name">Central Madeirense</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-building"></i> SAMBIL</div>
-                    <span class="client-hover-name">Sambil</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-tree"></i> BARUTA</div>
-                    <span class="client-hover-name">Baruta Avanza Contigo</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-mobile-screen"></i> SAMSUNG</div>
-                    <span class="client-hover-name">Samsung</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-industry"></i> ROSNEFT</div>
-                    <span class="client-hover-name">Rosneft</span>
-                </div>
-                <div class="client-logo-item">
-                    <div class="logo-box"><i class="fa-solid fa-cart-shopping"></i> LÍDER</div>
-                    <span class="client-hover-name">Líder</span>
-                </div>
-            </div>
+
+    
+    <!-- Carta 1 -->
+    <a href="persianas.html" class="card-zigzag-item">
+        <div class="card-img-box">
+            <img src="assets/imgpersi.jpeg" alt="Persianas Enrollables">
         </div>
-    </section>
-
-    <!-- SEPARADOR DE SECCIÓN -->
-    <div class="section-separator">
-        <div class="separator-line"></div>
-    </div>
-
-    <!-- CONTÁCTANOS -->
-    <section id="contactanos" class="contact-section">
-        <div class="contact-overlay"></div>
-        <div class="contact-content reveal">
-            <h2 class="contact-title">¿Listo para transformar <br><span class="highlight-red">tu espacio?</span></h2>
-            <p>Atención personalizada en toda Venezuela. Presupuestos y asesoría técnica directa.</p>
-            <div class="contact-btn-container">
-                <button class="btn-custom open-modal-btn">
-                    <span>SOLICITAR COTIZACIÓN AQUÍ</span>
-                </button>
-            </div>
+        <div class="card-info-box">
+            <h3 class="card-title">ENROLLABLES</h3>
+            <p class="card-text">Diseños modernos y funcionales con control solar preciso para tu hogar u oficina.</p>
         </div>
-    </section>
+    </a>
 
-    <!-- MODAL FORMULARIO DE CONTACTO -->
-    <div id="contactModal" class="modal-backdrop">
-        <div class="modal-card">
-            <button class="modal-close-btn" id="closeModal">&times;</button>
-            <h3 class="modal-title">Formulario de <span class="highlight-red">Solicitud</span></h3>
-            <p class="modal-sub">Completa los datos para coordinar vía WhatsApp.</p>
+    <!-- Carta 2 -->
+    <a href="persianas.html" class="card-zigzag-item">
+        <div class="card-img-box">
+            <img src="assets/imgpersi2.jpeg" alt="Persianas Verticales">
+        </div>
+        <div class="card-info-box">
+            <h3 class="card-title">VERTICALES</h3>
+            <p class="card-text">Elegancia versátil ideal para cubrir ventanales amplios de piso a techo.</p>
+        </div>
+    </a>
+
+    <!-- Carta 3 -->
+    <a href="persianas.html" class="card-zigzag-item">
+        <div class="card-img-box">
+            <img src="assets/imgpersi3.jpeg.webp" alt="Persianas Romanas">
+        </div>
+        <div class="card-info-box">
+            <h3 class="card-title">ROMANAS</h3>
+            <p class="card-text">Acabado textil refinado que aporta calidez, pliegues suaves y máxima distinción.</p>
+        </div>
+    </a>
+
+</div>
+
+
+        
+
+        <!-- 5. NUESTROS SERVICIOS / PORTAFOLIO COMERCIAL -->
+<section id="servicios" class="section-servicios-logos">
+    <div class="section-container ">
+        
+        <!-- Encabezado estilo Portafolio / Servicios (Transparente sin bg-hueso) -->
+        <div class="services-header-centered reveal-top">
             
-            <form id="whatsappForm">
-                <div class="form-group">
-                    <label for="userName">Nombre Completo:</label>
-                    <input type="text" id="userName" placeholder="Ej. Juan Pérez" required>
-                </div>
+            <h1 class="services-title">Empresas que confian en nuestros servicios</h1>
 
-                <div class="form-group">
-                    <label for="userState">Ubicación (Estado):</label>
-                    <select id="userState" required>
-                        <option value="" disabled selected>Selecciona tu estado</option>
-                        <option value="Amazonas">Amazonas</option>
-                        <option value="Anzoátegui">Anzoátegui</option>
-                        <option value="Apure">Apure</option>
-                        <option value="Aragua">Aragua</option>
-                        <option value="Barinas">Barinas</option>
-                        <option value="Bolívar">Bolívar</option>
-                        <option value="Carabobo">Carabobo</option>
-                        <option value="Cojedes">Cojedes</option>
-                        <option value="Delta Amacuro">Delta Amacuro</option>
-                        <option value="Distrito Capital">Distrito Capital</option>
-                        <option value="Falcón">Falcón</option>
-                        <option value="Guárico">Guárico</option>
-                        <option value="La Guaira">La Guaira</option>
-                        <option value="Lara">Lara</option>
-                        <option value="Mérida">Mérida</option>
-                        <option value="Miranda">Miranda</option>
-                        <option value="Monagas">Monagas</option>
-                        <option value="Nueva Esparta">Nueva Esparta</option>
-                        <option value="Portuguesa">Portuguesa</option>
-                        <option value="Sucre">Sucre</option>
-                        <option value="Táchira">Táchira</option>
-                        <option value="Trujillo">Trujillo</option>
-                        <option value="Yaracuy">Yaracuy</option>
-                        <option value="Zulia">Zulia</option>
-                        <option value="Dependencias Federales">Dependencias Federales</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="userService">Servicio Requerido:</label>
-                    <select id="userService" required>
-                        <option value="" disabled selected>Selecciona un servicio</option>
-                        <option value="Asesoria para implementar un toldo/persiana">Asesoria para implementar un toldo/persiana</option>
-                        <option value="Solicitar cotizacion">Solicitar cotización</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="btn-custom btn-full">
-                    <span><i class="fa-brands fa-whatsapp"></i> ENVIAR A WHATSAPP</span>
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- SEPARADOR DE SECCIÓN -->
-    <div class="section-separator">
-        <div class="separator-line"></div>
-    </div>
-
-    <!-- PREGUNTAS FRECUENTES (FAQ) -->
-    <section id="faq" class="faq-section reveal">
-        <div class="container">
-            <div class="section-title-container">
-                <h2 class="section-title">Preguntas <span class="highlight-red">Frecuentes</span></h2>
-            </div>
+            <p style="color: beige;"> Realizamos instalaciones en toda Venezuela</p>
             
-            <div class="accordion-container">
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>¿Cuánto tiempo tarda la fabricación e instalación?</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <p>El tiempo promedio de fabricación oscila entre 5 y 10 días hábiles según las dimensiones del proyecto. La instalación se realiza en un solo día.</p>
-                    </div>
-                </div>
+        </div>
 
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>¿Qué tipo de mantenimiento requieren los toldos?</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Se recomienda una limpieza periódica con agua y jabón neutro, además de evitar recoger la lona totalmente húmeda para extender su durabilidad.</p>
-                    </div>
+        <!-- Carrusel Infinito de Logos / Tarjetas Pequeñas -->
+        <div class="logos-carousel-wrapper reveal-bottom bg-hueso">
+            <div class="logos-carousel-track" id="logosCarouselTrack">
+                <!-- Tarjeta Logo 1 -->
+                <div class="logo-card">
+                    <img src="assets/logo1.jpg" alt="Universidad La Salle">
                 </div>
-
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>¿Tienen cobertura fuera de Caracas/Valencia?</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Sí, realizamos instalaciones a nivel nacional previa coordinación con nuestro equipo técnico en el estado seleccionado.</p>
-                    </div>
+                <!-- Tarjeta Logo 2 -->
+                <div class="logo-card">
+                    <img src="assets/logo10.png" alt="DECASA">
+                </div>
+                <!-- Tarjeta Logo 3 -->
+                <div class="logo-card">
+                    <img src="assets/logo3.png" alt="Poder Judicial">
+                </div>
+                <!-- Tarjeta Logo 4 -->
+                <div class="logo-card">
+                    <img src="assets/logo2.jpg" alt="CAFFENIO">
+                </div>
+                 <!-- Tarjeta Logo 4 -->
+                <div class="logo-card">
+                    <img src="assets/logo4.png" alt="CAFFENIO">
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- SEPARADOR DE SECCIÓN -->
-    <div class="section-separator">
-        <div class="separator-line"></div>
     </div>
 
-    <!-- FOOTER ESTRUCTURADO SEGÚN LA IMAGEN -->
+
+    <!-- Botón (Sube desde abajo) -->
+        <div class="center-action reveal-bottom">
+            <a href="toldos.html" class="btn btn-cut">VER</a>
+        </div>
+</section>
+
+
+        
+        <!-- SEPARADOR INVISIBLE PARA SCROLL -->
+         <div class="spacer spacer-md"></div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <!-- 4. TOLDOS Y SOMBRILLAS -->
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <!-- 4. TOLDOS (CARRUSEL CÍCLICO SIN BG-HUESO CON REVELADO ALTERNADO) -->
+
+    <!-- SECTION TOLDOS Y SOMBRILLAS -->
+
+
+    
+
+
+
+
+
+      
+
+ <!-- 6. CONTACTO -->
+        <section id="contacto" class="section-bg-wrapper">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200" alt="Fondo Contacto" class="section-bg-img">
+            <div class="section-bg-overlay"></div>
+
+            <div class="section-container relative-z text-center reveal-left bg-hueso">
+                <h2 class="section-title title-line title-center">¿Listo para transformar tus espacios?</h2>
+                <p class="cta-description">
+                    Contáctanos hoy mismo y recibe asesoría personalizada por parte de nuestro equipo de especialistas.
+                </p>
+                <div class="cta-actions">
+                    <a href="https://wa.me/#" class="btn btn-cut">CONTACTAR POR WHATSAPP</a>
+                    <a href="#inicio" class="btn btn-cut">VOLVER AL INICIO</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEPARADOR INVISIBLE PARA SCROLL -->
+        <div class="spacer spacer-md"></div>
+
+        
+        <!-- SEPARADOR INVISIBLE PARA SCROLL -->
+        <!-- <div class="spacer spacer-md"></div> sdjasbdksjbndajbdssabskjdbakjdsbadjkasbdasbjdsaodasjodabdosu 5-->
+
+        
+    </main>
+
     <footer class="footer">
-        <div class="footer-container">
-            
-            <!-- Columna 1: Brand & Social -->
-            <div class="footer-col footer-col-brand">
-                <div class="footer-logo-title">
-                    <div class="logo-circle-small">
-                        <i class="fa-solid fa-umbrella"></i>
-                    </div>
-                    <span>TOLDOS VENEZUELA</span>
-                </div>
-                <p class="footer-brand-desc">Disfruta de la mejor experiencia y confort a bordo en tus espacios.</p>
-                <div class="footer-socials">
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <!-- Columna 2: EXPLORAR -->
-            <div class="footer-col">
-                <h4 class="footer-col-title">EXPLORAR</h4>
-                <ul class="footer-links">
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#quienes-somos">Trayectoria y Confianza</a></li>
-                    <li><a href="#toldos">Nuestros Productos</a></li>
-                    <li><a href="#beneficios">Nuestra Garantía</a></li>
-                </ul>
-            </div>
-
-            <!-- Columna 3: INFORMACIÓN -->
-            <div class="footer-col">
-                <h4 class="footer-col-title">INFORMACIÓN</h4>
-                <ul class="footer-links">
-                    <li><a href="#toldos">Servicios Exclusivos</a></li>
-                    <li><a href="#beneficios">¿Por qué elegirnos?</a></li>
-                    <li><a href="#clientes">Experiencias de Clientes</a></li>
-                    <li><a href="#faq">Preguntas Frecuentes (FAQ)</a></li>
-                </ul>
-            </div>
-
-            <!-- Columna 4: CONECTA -->
-            <div class="footer-col">
-                <h4 class="footer-col-title">CONECTA</h4>
-                <ul class="footer-links">
-                    <li><a href="#contactanos">Contactar al equipo</a></li>
-                    <li><a href="#" class="open-modal-btn">Hagamos negocio (Aliados)</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Toldos & Persianas Venezuela. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2026 Persianas El Ávila. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- BOTÓN FLOTANTE ESTÁTICO DE WHATSAPP CON ALERT DE BARRA -->
-    <div class="floating-whatsapp-wrapper">
-        <div class="whatsapp-toast-alert" id="whatsappToast">
-            <span class="toast-text">Doble click para escribirnos directamente <i class="fa-solid fa-check"></i></span>
-            <div class="toast-progress-track">
-                <div class="toast-progress-bar" id="toastProgressBar"></div>
-            </div>
-        </div>
-        <button class="floating-whatsapp-btn" id="floatingWhatsappBtn" aria-label="Contacto WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-        </button>
-    </div>
-
-    <!-- Script JS -->
     <script src="script.js"></script>
 </body>
 </html>

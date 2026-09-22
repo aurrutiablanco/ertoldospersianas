@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - E.R Toldos & Persianas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVBAR GLOBAL -->
+    <header class="header revealed">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="E.R Toldos & Persianas" class="logo-img">
+                <span class="logo-text">E.R TOLDOS & PERSIANAS</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="quienes_somos.html" class="nav-link">
+                            QUIÉNES SOMOS <span class="arrow">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="quienes_somos.html#empresa">Nuestra Empresa</a></li>
+                            <li><a href="quienes_somos.html#mision-vision">Misión y Visión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="persianas.html" class="nav-link">
+                            PERSIANAS <span class="arrow">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="persianas.html#inicio">Hero Persianas</a></li>
+                            <li><a href="persianas.html#enrollables">Enrollables</a></li>
+                            <li><a href="persianas.html#sheer-elegance">Sheer Elegance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="toldos.html" class="nav-link">
+                            TOLDOS <span class="arrow">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="toldos.html#inicio">Hero Toldos</a></li>
+                            <li><a href="toldos.html#retractiles">Retráctiles</a></li>
+                            <li><a href="toldos.html#fijos">Fijos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="servicios.html" class="nav-link">
+                            SERVICIOS <span class="arrow">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#inicio">Todos los Servicios</a></li>
+                            <li><a href="servicios.html#instalacion">Instalación</a></li>
+                            <li><a href="servicios.html#mantenimiento">Mantenimiento</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="spacer spacer-md"></div>
+
+    <!-- SECCIÓN: CONTACTO & UBICACIÓN -->
+    <section id="contacto" class="section-bg-wrapper bg-hueso reveal-bottom">
+        <div class="section-container">
+            <div class="header-panel-azul reveal-left">
+                <span class="panel-subtitle">ESTAMOS PARA SERVIRTE</span>
+                <h1 class="section-title title-white">Contáctanos</h1>
+                <p class="section-subtitle-text">Solicita tu cotización o agenda una visita técnica a domicilio sin compromiso.</p>
+            </div>
+
+            <div class="nosotros-grid relative-z">
+                <!-- PANEL DE INFORMACIÓN DE CONTACTO -->
+                <div class="blue-panel reveal-left">
+                    <span class="panel-subtitle">ATENCIÓN PERSONALIZADA</span>
+                    <h2 class="panel-title">Información de Contacto</h2>
+                    <p class="panel-text">
+                        <strong>Dirección:</strong> Valencia, Estado Carabobo, Venezuela.
+                    </p>
+                    <p class="panel-text">
+                        <strong>Atención Directa / WhatsApp:</strong> +58 (4XX) XXX-XXXX
+                    </p>
+                    <p class="panel-text">
+                        <strong>Correo Electrónico:</strong> contacto@ertoldosypersianas.com
+                    </p>
+                    <p class="panel-text">
+                        <strong>Horario de Atención:</strong> Lunes a Viernes de 8:00 AM a 5:00 PM
+                    </p>
+                    <a href="https://wa.me/" target="_blank" class="btn btn-cut">HABLAR POR WHATSAPP</a>
+                </div>
+
+                <!-- FORMULARIO DE CONTACTO -->
+                <div class="about-card reveal-right" style="padding: 25px; background: #ffffff; border-radius: 8px;">
+                    <h3 style="margin-bottom: 15px; color: #122c55;">Envíanos un mensaje</h3>
+                    <form action="#" method="POST" class="contact-form">
+                        <div style="margin-bottom: 15px;">
+                            <label for="nombre" style="display: block; font-weight: bold; margin-bottom: 5px;">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="telefono" style="display: block; font-weight: bold; margin-bottom: 5px;">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="producto" style="display: block; font-weight: bold; margin-bottom: 5px;">Producto de Interés:</label>
+                            <select id="producto" name="producto" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                                <option value="persianas">Persianas</option>
+                                <option value="toldos">Toldos</option>
+                                <option value="instalacion">Instalación / Mantenimiento</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="mensaje" style="display: block; font-weight: bold; margin-bottom: 5px;">Mensaje o Consulta:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-cut" style="width: 100%; border: none; cursor: pointer;">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer spacer-sm"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 E.R Toldos & Persianas - Todos los derechos reservados. Valencia, Venezuela.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
